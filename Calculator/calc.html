@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+        <link rel="stylesheet" href="calc.css" />
+    </head>
+    <body>
+        <div class="calculator">
+
+            <div class="history" id="history"></div>
+            <div class="display" id="display">0</div>
+            <div class="buttons">
+                <button class="btn light" onclick="clearDisplay()">AC</button>
+                <button class="btn light" onclick="toggleSign()">&plusmn;</button>
+                <button class="btn light" onclick="appendValue('%')">%</button>
+                <button class="btn orange" onclick="appendValue('/')" >&divide;</button>
+
+                <button class="btn dark" onclick="appendValue('7')">7</button>
+                <button class="btn dark" onclick="appendValue('8')">8</button>
+                <button class="btn dark" onclick="appendValue('9')">9</button>
+                <button class="btn orange" onclick="appendValue('*')">&times;</button>
+
+                <button class="btn dark" onclick="appendValue('4')">4</button>
+                <button class="btn dark" onclick="appendValue('5')">5</button>
+                <button class="btn dark" onclick="appendValue('6')">6</button>
+                <button class="btn orange" onclick="appendValue('-')">-</button>
+
+                <button class="btn dark" onclick="appendValue('1')">1</button>
+                <button class="btn dark" onclick="appendValue('2')">2</button>
+                <button class="btn dark" onclick="appendValue('3')">3</button>
+                <button class="btn orange" onclick="appendValue('+')">+</button>
+
+                <button class="btn dark zero" onclick="appendValue('0')">0</button>
+                <button class="btn dark" onclick="appendValue('.')">.</button>
+                <button class="btn orange" onclick="calculate()">=</button>
+            </div>
+
+        </div>
+
+        <script src="calc.js"></script>
+    </body>
+</html>
